@@ -21,11 +21,18 @@ function changeColor(){
 }
 
 function clearGrid(){
+
+    let size = parseInt(prompt("Enter the grid size"));
+
     while(container.hasChildNodes()){
         container.removeChild(container.firstChild);
     }
-    
-    makeGrid(16,16)
+    if(Number.isInteger(size)){
+        makeGrid(size,size);
+    }
+    else{
+        makeGrid(16,16);
+    }
 }
 
 makeGrid(16,16);
