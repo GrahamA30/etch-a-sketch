@@ -1,0 +1,12 @@
+.grid-item{
+    background: white;
+    border: 1px solid black;
+
+}
+
+#container{
+    margin-top: 50px;
+    width: 960px;
+    height: 500px;
+    
+}
